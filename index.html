@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سایت خلیج فارس</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      direction: rtl;
+      margin: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #006699;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+    nav button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      padding: 10px 15px;
+      transition: background-color 0.3s;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+    nav button:hover, nav button.active {
+      background-color: #004466;
+    }
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #004466;
+      margin-top: 0;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #004466;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>خلیج فارس</header>
+
+  <nav>
+    <button class="active" data-section="intro">معرفی</button>
+    <button data-section="history">تاریخچه</button>
+    <button data-section="geography">جغرافیا</button>
+    <button data-section="culture">فرهنگ</button>
+    <button data-section="economy">اقتصاد و منابع</button>
+  </nav>
+
+  <section id="intro" class="content-section">
+    <h2>معرفی</h2>
+    <p>خلیج فارس، پهنه آبی است بین ایران و شبه‌جزیره عربستان که اهمیت تاریخی، اقتصادی و جغرافیایی زیادی دارد. این خلیج به عنوان یکی از مهم‌ترین مناطق نفت‌خیز جهان شناخته می‌شود و مسیر اصلی عبور نفت از خاورمیانه به بازارهای جهانی است.</p>
+    <img src="خلیج فارس.jpg" alt="نقشه خلیج فارس" />
+  </section>
+
+  <section id="history" class="content-section" style="display:none;">
+    <h2>تاریخچه</h2>
+    <p>خلیج فارس یکی از قدیمی‌ترین مراکز تمدن جهان است که از دوران باستان اهمیت استراتژیک داشته است. این منطقه محل حکومت‌های مختلفی از جمله ایلامیان، هخامنشیان، ساسانیان و دیگر تمدن‌ها بوده است. نام «خلیج فارس» در متون تاریخی یونانی و رومی‌ها به ثبت رسیده و همواره مورد توجه جهان بوده است.</p>
+    <p>در قرون وسطی و دوران مدرن، خلیج فارس محل رقابت‌های قدرت‌های منطقه‌ای و جهانی بوده و هم‌اکنون نیز اهمیت نظامی و اقتصادی بالایی دارد.</p>
+  </section>
+
+  <section id="geography" class="content-section" style="display:none;">
+    <h2>جغرافیا</h2>
+    <p>خلیج فارس به طول تقریبی ۹۷۰ کیلومتر و عرضی بین ۵۵ تا ۳۲۰ کیلومتر، بین ایران و شبه‌جزیره عربستان قرار دارد. این پهنه آبی از شمال به ایران، از غرب به عراق و کویت، از جنوب به تنگه هرمز و دریای عمان و از شرق به امارات متحده عربی و عمان محدود می‌شود.</p>
+    <p>بستر خلیج فارس عمدتاً کم‌عمق بوده و زیستگاه گونه‌های مختلف دریایی است. همچنین جزایر مهمی مانند قشم، کیش، ابوموسی و ... در این خلیج قرار دارند که نقش مهمی در منطقه دارند.</p>
+  </section>
+
+  <section id="culture" class="content-section" style="display:none;">
+    <h2>فرهنگ</h2>
+    <p>مناطق اطراف خلیج فارس دارای فرهنگ غنی و متنوعی هستند که تحت تاثیر تاریخ طولانی، تجارت دریایی و تبادل فرهنگی بین مردم ایران و کشورهای عربی شکل گرفته است. زبان‌ها، آداب و رسوم، موسیقی و هنرهای محلی در این منطقه بسیار متنوع و جالب توجه‌اند.</p>
+    <p>اقوام مختلفی از جمله بلوچ‌ها، عرب‌ها، فارس‌ها و دیگر اقلیت‌ها در این نواحی زندگی می‌کنند که هر کدام فرهنگ و سنت‌های خاص خود را دارند.</p>
+  </section>
+
+  <section id="economy" class="content-section" style="display:none;">
+    <h2>اقتصاد و منابع</h2>
+    <p>خلیج فارس یکی از غنی‌ترین مناطق نفتی جهان است و بخش عمده‌ای از ذخایر نفت و گاز جهان در این منطقه قرار دارد. کشورهای ساحلی خلیج فارس مانند ایران، عربستان سعودی، کویت، امارات متحده عربی و قطر، اقتصادهای خود را به نفت و گاز وابسته کرده‌اند.</p>
+    <p>علاوه بر نفت، ماهیگیری، تجارت دریایی و گردشگری نیز از دیگر منابع مهم اقتصادی این منطقه به شمار می‌روند. بندرهای مهمی مانند بندرعباس و دبی در این منطقه قرار دارند که نقش حیاتی در تجارت جهانی ایفا می‌کنند.</p>
+  </section>
+
+  <footer>
+    © ۲۰۲۵ سایت خلیج فارس - همه حقوق محفوظ است
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('nav button');
+    const sections = document.querySelectorAll('.content-section');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        sections.forEach(section => section.style.display = 'none');
+        const sectionId = btn.getAttribute('data-section');
+        document.getElementById(sectionId).style.display = 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>
